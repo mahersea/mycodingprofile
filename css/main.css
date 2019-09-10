@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-left:20px;
+    padding-top:10px;
+}
+.main-container {
+    display: flex;
+    /* border:1px dotted blueviolet; */
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    /* border:1px dotted blueviolet; */
+}
+.item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border:1px dotted blueviolet;   */
+}
+.lab-container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* border:1px dotted blueviolet;   */
+}
+.subpage-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* border:1px dotted blueviolet; */
+}
+.col1{
+    min-width: 250px;
+    max-width: 250px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    /* border:1px dotted red; */
+}
+.col2{
+    padding: 20px;
+    padding-right: 20px;
+}
+.title-container{
+    width:60%;
+}
+.main-title{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+.title {
+    padding-left: 2px;
+    padding-right: 20px;
+    background-color: rgb(51, 49, 49);
+    color:darkgray;
+}
+.concept-title {
+    padding-left: 2px;
+    padding-right: 20px;
+    background-color: rgb(51, 49, 49);
+    color:darkgray;
+}
+.subtitle {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #cccccc;
+    color:black;     
+    border-top: 1px solid black;
+}
+.items {
+    padding:20px;
+    margin-bottom: 20px;
+   background-color: darkgray;
+}
+.lab-1{
+    height:200px;
+    overflow:auto;
+    border-right:2px solid gray;
+    margin:0px;
+    padding:10px;
+    width:100%;
+}
+.lab-2{
+    margin:10px;
+    padding:10px;
+    float: right;
+    font-size: .8em;
+    background-color: antiquewhite;
+    width:300px;
+}
+.item-1{
+    flex-grow:2;
+    padding-right: 20px;
+}
+.item-2{
+    flex-grow:1;
+}
+a:link {
+    color:crimson;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color:crimson;
+    text-decoration: none;
+}
+
+a:hover {
+    color:blue;
+    text-decoration: none;
+}
+
+a:active {
+    color:blue;
+    text-decoration: none;
+}
+.uline{
+    border-bottom: 1px solid black;
+}
+#rotate {
+    display: block;
+    width:auto;
+    padding-top:2px;
+}
+#showlessons{
+    padding: 2px;
+}
+.main-icons{
+    padding-right:10px;
+    border-right: 2px dotted rgb(27, 27, 27);
+    display: flex;
+}
+.icon{
+    text-align: center;
+    margin-left:20px;
+}
+.contact{
+    padding-left:10px;
+}
+.new:before {
+    list-style-type: none;
+    font-size: 1.5em;
+    content:'\1F195';
+    margin-left: -25px;
+    margin-right: 10px;
+}
+.newlab {
+    /* height:100px; */
+}
+.old {
+    font-size:.8em;
+    color:rgb(42, 42, 42);
+}

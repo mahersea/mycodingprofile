@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>JSON Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="jquery.json-view.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.json-view.css">
+  </head>
+  <body>
+    <h2>JSON Demo</h2>
+    <h5><a href="https://github.com/jdorfman/awesome-json-datasets#bitcoin">Easy sources of JSON data</a></h5>
+    <hr>
+<p>Save this file and uncomment a URL to try a different data source</p>
+    <div id='tree'></div>
+
+        <script>
+
+        var url = "https://data.nasa.gov/resource/y77d-th95.json";     // Earth Meteorite Landings
+        //var url = "https://api.github.com/emojis";                     // emojis
+        //var url = "http://api.worldbank.org/countries/IND/indicators/SP.POP.TOTL?per_page=5000&format=json"; // population of India
+        //var url = "https://www.govtrack.us/api/v2/role?current=true&role_type=senator";    // US Senetors
+        //var url = "http://api.tvmaze.com/singlesearch/shows?q=mr-robot&embed=episodes";
+        //var url = "https://www.reddit.com/r/science.json";
+        //var url="https://api.exchangerate-api.com/v4/latest/USD";
+        //var url="http://vocab.nic.in/rest.php/states/json";
+
+        fetch(url)
+            .then(res => res.json())
+            .then((out) => {
+
+                $('#tree').jsonView(out);         // This line converts the JSON into 
+                                                  // an HTML/CSS tree-like structure
+                console.log(out[13])       // this works in some cases - show single item.
+
+            }).catch(err => console.error(err));
+        
+       
+        </script>
+
+
+
+  </body>
+</html>

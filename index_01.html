@@ -1,0 +1,377 @@
+<html>
+    <head>
+        <title>Front-End Web Developer Course - Overview</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+          <header>
+            <div class="title-container">
+                <h2 class="main-title">Front-End Web Developer Resources</h2>
+            </div>
+            <div class="main-icons">
+                <div class="icon">
+                    <a href="calendar/"><img src="images/calendar.png"><br>
+                    Calendar</a>
+                </div>
+                <div class="icon">
+                    <a href="msp1/kevpears/filecontrol.html"><img src="images/folder.jpg"><br>
+                    Upload Project</a>
+                </div>
+                <div class="icon">
+                    <a href="http://mycodingprofile.slack.com">
+                        <img src="images/slack.png"><br>
+                    Slack</a>
+                </div>
+            </div>
+            <div class="contact">
+                <b><u>Instructor</u></b>: 
+                <br />
+                Sean Maher
+                <br />
+                mahersea@gmail.com
+            </div>
+        </header>
+        <div class="main-container"> 
+            <div class="col1">
+                    <!-- Lessons -->
+                    <div class="title">
+                        <canvas id="bluedot" width="15" height="15"></canvas>
+                        Lesson Presentations
+                    </div>
+                    <div class="items">
+                        <ul>
+                            <li><a href="calendar/view.php?lesson_num=23">Lesson 23</a><br></li>
+                            <li><a href="calendar/view.php?lesson_num=22">Lesson 22</a><br></li>
+                            <li><a href="calendar/view.php?lesson_num=21">Lesson 21</a><br></li>
+                        </ul>
+                        <br>
+                        <div class="flex-container"><div id="rotate_b">&#10148;</div>
+                        <a onclick="myFunction_b()" id="showlessons_b"> Lessons 11-19</a></div>
+                        <div id="lessons_b" style="display:none;">
+                            <ul>
+                                <li><a href="calendar/view.php?lesson_num=19">Lesson 19</a><br></li>
+                                <li><a href="calendar/view.php?lesson_num=17">Lesson 17</a><br></li>
+                                <li><a href="calendar/view.php?lesson_num=16">Lesson 16</a><br></li>
+                                <li><a href="calendar/view.php?lesson_num=15">Lesson 15</a><br></li>
+                                <li><a href="calendar/view.php?lesson_num=14">Lesson 14</a><br></li>
+                                <li><a href="calendar/view.php?lesson_num=13">Lesson 13</a><br></li>
+                                <li><a href="calendar/view.php?lesson_num=12">Lesson 12</a><br></li>
+                                <li><a href="calendar/view.php?lesson_num=11">Lesson 11</a><br></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="flex-container"><div id="rotate">&#10148;</div>
+                        <a onclick="myFunction()" id="showlessons"> Lessons 1-10</a></div>
+                        <div id="lessons_a" style="display:none;">
+                            <ul>
+                                <li><a href="lessons/lesson-plan-10.pdf">Lesson 10</a><br></li>
+                                <li><a href="lessons/lesson-plan-9.pdf">Lesson 9</a><br></li>
+                                <li><a href="lessons/lesson-plan-8.pdf">Lesson 8</a><br></li>
+                                <li><a href="lessons/lesson-plan-7.pdf">Lesson 7</a><br></li>
+                                <li><a href="lessons/lesson-plan-6.pdf">Lesson 6</a><br></li>
+                                <li><a href="lessons/lesson-plan-5b.pdf">Lesson 5 (cont.)</a><br></li>
+                                <li><a href="lessons/lesson-plan-5.pdf">Lesson 5</a><br></li>
+                                <li><a href="lessons/lesson-plan-4.pdf">Lesson 4</a><br></li>
+                                <li><a href="lessons/lesson-plan-3.pdf">Lesson 3</a><br></li>
+                                <li><a href="lessons/lesson-plan-2.pdf">Lesson 2</a><br></li>
+                                <li><a href="lessons/lesson-plan-1.pdf">Lesson 1</a><br></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                            function myFunction() {
+                              var x = document.getElementById("lessons_a");
+                              var y = document.getElementById("showlessons");
+                              
+                              if (x.style.display === "none") {
+                                x.style.display = "block";
+                                y.innerHTML = " Lessons 1-10";
+                                document.getElementById("rotate").style.transform = "rotate(90deg)";
+                              } else {
+                                x.style.display = "none";
+                                y.innerHTML = " Lessons 1-10"
+                                document.getElementById("rotate").style.transform = "rotate(0deg)";
+                              }
+                            }
+                        function myFunction_b() {
+                          var x = document.getElementById("lessons_b");
+                          var y = document.getElementById("showlessons_b");
+                          
+                          if (x.style.display === "none") {
+                            x.style.display = "block";
+                            y.innerHTML = " Lessons 11-21";
+                            document.getElementById("rotate_b").style.transform = "rotate(90deg)";
+                          } else {
+                            x.style.display = "none";
+                            y.innerHTML = " Lessons 11-121"
+                            document.getElementById("rotate_b").style.transform = "rotate(0deg)";
+                          }
+                        }
+                    </script>
+                    <!-- Concepts -->
+                    <div class="title">
+                            <canvas id="yellowdot" width="15" height="15"></canvas>
+                             Key Concepts
+                        </div>
+                        <div class="items">
+                                <li><a href="key-concepts-css-box-model.html">CSS Box Model</a><br></li>
+                        </div>
+                    <!-- Learning -->
+                    <div class="title">
+                            <canvas id="purpledot" width="15" height="15"></canvas>
+                            Learning Resources
+                    </div>
+                    <div class="items">
+						    
+							Project Support:
+                        
+                            <li><a href="https://www.mycodingprofile.com/main_lessons/msp1/kevpears/filecontrol.html">Upload a Project</a></li>
+                           
+                        <br>
+                        
+                            Intro to HTML:
+                        
+                            <li><a href="http://www.w3schools.com">W3schools: HTML Tutorial</a></li>
+                           
+                        <br>
+                        CSS:
+                        
+                            <li><a href="https://www.w3schools.com/css/default.asp">W3schools: CSS Tutorial</a></li>     
+                        
+                        <br>
+                        Videos:
+                        
+                            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/v/making-webpages-intro">Khan Academy: HTML Intro</a></li>
+                        
+                    </div>
+
+                    <!-- Quick References -->
+                    <div class="title">
+                            <canvas id="reddot" width="15" height="15"></canvas>
+                            Quick References
+                    </div>
+                    <div class="items">
+                            <li class="new"><a href="https://docs.emmet.io/cheat-sheet/">Emmet Cheat Sheet</a></li>
+                            <li><a href="keyboard-shortcuts.pdf">Keyboard Shortcuts</a></li>
+                            <li><a href="vs-code/preview-html-vscode.pdf">Using HTML Preview</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                            <li><a href="https://htmldog.com/guides/html/">HTML Dog</a></li>
+                            <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a></li>
+                            
+                    </div>
+
+                    <!-- Reading -->
+                    <div class="title">
+                            <canvas id="greendot" width="15" height="15"></canvas>
+                            Further Reading
+                    </div>
+                    <div class="items">
+
+                            <li><a href="https://www.lifewire.com/why-use-semantic-html-3468271">Why Use Semantic HTML?</a></li>
+                            <li><a href="https://css-tricks.com/guides/">CSS Tricks - Guides</a></li>
+                            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/html-css-further-learning/a/html-css-further-learning-what-to-learn-next">What to learn next</a></li>
+                    </div>
+
+                    <!-- Career -->
+                    <div class="title">
+                            <canvas id="graydot" width="15" height="15"></canvas>
+                            Career Resources
+                    </div>
+                    <div class="items">
+                            <li><a href="https://weworkremotely.com/">We Work Remotely</a></li>
+                            <li><a href="job-titles.html">Web Careers</a></li>
+                    </div>
+
+            </div>
+            <div class="col2">
+                    <!-- Lab Exercises -->
+
+                    <div class="title">
+                            <canvas id="orangedot" width="15" height="15"></canvas>
+                            Exercises
+                    </div>
+                    <div class="exercise-body">
+
+                        <!-- Try It    -->
+                        <div class="subtitle"><strong>Try It</strong></div>
+                        <div class="items" style="margin-bottom: 0px;">
+                            <div class="item-container">
+                                <div class="item-1">
+                                    <p style="font-size: .9em">Mess with the Code on the left, Run to view results on the right
+                                    </p>
+                                    <ul>
+                                        <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro">First HTML</a></li>
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_names">First CSS</a></li>
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_color_text">Inline CSS </a></li>
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default">Internal CSS </a></li>
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grouping">Grouping </a></li>
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_class">Class Attribute </a></li>
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_id">Id Attribute </a></li>
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel">Box Model </a></li>   
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_link_decoration">Styling Links</a></li>   
+                                        
+    
+                                        <br>
+                                        Try something more difficult:<br>
+                                        
+                                        <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background_shorthand2">Advanced CSS Methods</a></li>   
+                                        <li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs">Tabs using CSS and Javascript</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="item-2">
+                                    <p><a href="https://www.w3schools.com/css/css_exercises.asp" class="w3-button w3-green" style="width:200px">Start CSS Exercises!</a></p>
+                                    <p><a href="https://www.w3schools.com/css/css_quiz.asp" class="w3-button w3-blue" style="width:200px">Start CSS Quiz!</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Reproduce It    -->
+                        <div class="subtitle"><strong>Reproduce It</strong></div>
+                        <div class="items" style="margin-bottom: 0px;">
+                            <p style="font-size: .9em">Challenge yourself to reproduce what you see without looking at the source code. 
+                            Of course, view the source code to check your work. 
+                            Feel free to make additions, but make sure to reproduce the format as closely as possible.
+                            </p>
+                            <ol><span class="uline">Part A: Basics, Lessons 1-14</span>
+                                <li><a href="reproduce-this-basic.html">Basic</a></li>
+                                <li><a href="reproduce-this.html">Basic +</a></li>
+                                <li><a href="reproduce-this-css.html">Intro to CSS</a></li>
+                                <li><a href="reproduce-this-align.html">Aligning Text</a></li>
+                                <li><a href="reproduce-this-nesting.html">Nesting Containers</a></li>
+                                <li><a href="reproduce-this-borders.html">Adding Style with Borders</a></li>
+                                <li><a href="reproduce-it-all.html">Putting it Together</a></li>
+                                <li><a href="reproduce-outline.html">Standard Outline</a></li>
+                                <li><a href="exercise10/index.html">Multiple Pages</a></li>
+                                <li><a href="exercise11/float-image.html">Float Image</a></li>
+                                <br>
+                                <p style="font-size: .9em">Try something more difficult:<br></p>
+                            </ol>
+                            <ol start=16>
+                                <li><a href="reproduce-this-align-nested.html">Aligning Containers with "float"</a></li>
+                            </ol>
+                        </div>
+                        <!-- Templates-->
+                        <div class="subtitle"><strong>Customize It (Templates)</strong></div>
+                        <div class="items">
+                                <p style="font-size: .9em">Save these files (or copy and paste the source code) and get building! 
+                                Try to recycle content from a previous exercise to help your project evolve.
+                                </p>
+                            <ul>
+                                <li><a href="templates/index.html">Empty Template</a></li>
+                                <li><a href="template-basic.html">Basic Template with CSS and Semantic Tags</a></li>
+                                <li><a href="template-bootstrap.html">Bootstrap Template</a></li>
+                            </ul>
+                        </div>
+                        <!-- Tools-->
+                        <div class="subtitle"><strong>Tools</strong></div>
+                        <div class="items">
+                                <p style="font-size: .9em">Use these (copy and paste the source code) to add flair and functionality 
+                                Try to recycle content from a previous exercise to help your project evolve.
+                                </p>
+                            <ul>
+                                <li><a href="https://html-css-js.com/css/generator/">CSS Generators</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        <!-- This script uses the HTML Canvas element and javascript to draw graphic
+             In this case, drawing gradient circles -->
+        <script>
+            // Blue dot
+                var c = document.getElementById("bluedot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"blue");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+    
+            // Red dot
+                var c = document.getElementById("reddot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"red");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+    
+            // Green dot
+            var c = document.getElementById("greendot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"green");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+    
+            // Yellow dot
+            var c = document.getElementById("yellowdot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"yellow");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+        
+            // Orange dot
+            var c = document.getElementById("orangedot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"orange");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+
+            // Purple dot
+            var c = document.getElementById("purpledot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"purple");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+
+            // Gray dot
+            var c = document.getElementById("graydot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"black");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+            </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Nesting</title>
+    </head>
+    <style>
+        .somebox1{
+            border-width:1px;
+            border-style: solid;
+            border-color: blue;
+            padding:20px;
+        }
+        .somebox2{
+            border:1px;
+            border-style: dashed;
+            border-color: red;
+            padding:20px;
+        }
+        .somebox3{
+            border:5px;
+            border-style: double;
+            border-color: green;
+            padding:20px;
+        }
+    </style>
+    <body>
+
+            <h1>Nesting</h1>
+
+            <p>Use Internal CSS, not Inline</p>
+
+    <div class="somebox1">
+            <p>This is container 1. It has a 1 pixel solid blue border with 20px of padding and contains a paragraph tag with these words</p>
+            <div class="somebox2">
+                    <p>This is container 2. It has a dashed-line red border with 20px of padding and contains a paragraph tag with these words</p>
+
+                    <div class="somebox3">
+                            <p>This is container 3. It has a 5 pixel double green border and contains a paragraph tag with these words</p>
+                     </div>
+            </div>
+    </div>
+
+    </body>
+</html>

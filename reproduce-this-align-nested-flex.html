@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Aligning Nested Containers</title>
+    </head>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            border-width:1px;
+            border-style: solid;
+            border-color: blue;
+        }
+        .item{
+            flex-grow:1;
+            border:3px;
+            border-style: dashed;
+            border-color: red;
+            margin:20px
+        }
+
+        .main-title{
+            color:rgb(63, 62, 62);
+        }
+        .sub-title{
+            text-decoration: underline ;
+            text-decoration-style:solid;
+            color: rgb(95, 14, 105);
+        }
+    </style>
+    <body>
+
+            <h3 class="main-title">Aligning Nested Containers with Flexbox</h3>
+            
+    <div class="container">
+            
+        <div class="item">
+                <p>This is and Item</p>
+        </div>
+        <div class="item">
+                <p>This is an Item</p>
+        </div>
+        <div class="item">
+                <p>This is an item</p>  
+                    
+        </div>
+
+    </div>
+    <br>
+
+    <br>
+    </body>
+</html>

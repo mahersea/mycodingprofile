@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz 2</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+      body {
+        font-size: 1.2em;
+      }
+      body, pre {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .show_answer {
+        text-align: right;
+      }
+      .show_but {
+        font-size: 1.2em;
+      }
+    </style>
+    <script>
+    function showAnswer(num){
+        document.getElementById("answer_" + num).style.backgroundColor = "#32a852";
+        document.getElementById("answer_" + num).style.padding = "2px";
+        document.getElementById("answer_" + num).style.paddingRight = "200px";
+    }
+    </script>
+</head>
+<body>
+<h2 class="main-title"><a href="index.html">Front-End Web Developer Resources</a></h2>
+<div style="text-align: center"><h3>Quiz 2 - Review</h3></div>
+<hr>
+<pre>
+1. What Javascript keyword is used to create an instance of an object?
+    a. object
+    <span id="answer_1">b. new</span>
+    c. instance
+    d. div
+<div class="show_answer" id="question_1"><button onclick="showAnswer(1)" class="show_but">Show Answer</button></div>
+<hr>
+2. Which CSS style property and value are used to ensure that content does 
+   not appear to the left of a floating element?
+    a. text-right
+    b. text-left
+    c. clear:right
+    <span id="answer_2">d. clear:left</span>
+    <div class="show_answer" id="question_2"><button onclick="showAnswer(2)" class="show_but">Show Answer</button></div>
+<hr>
+3. What style sheet entry is used to place text within a &lt;div&gt; to appear 
+   20 pixels from the top of the element?
+    a. padding-bottom:20px
+    b. &lt;div&gt;&lt;padding-top:20px&gt;
+    <span id="answer_3">c. padding-top:20px</span>
+    d. &lt;div&gt;&lt;padding-bottom:20px&gt;
+    <div class="show_answer" id="question_3"><button onclick="showAnswer(3)" class="show_but">Show Answer</button></div>
+    <hr>
+4. Which CSS style property controls the manner in which elements overlap each other?
+    a. relative
+    b. &lt;div&gt;
+    c. float
+    <span id="answer_4">d. z-index</span>
+    <div class="show_answer" id="question_4"><button onclick="showAnswer(4)" class="show_but">Show Answer</button></div>
+    <hr>
+5. True or False: The list-style with the value of none still produces a structured list, 
+   either ordered or unordered.
+    <span id="answer_5">a. True</span>
+    b. False
+    <div class="show_answer" id="question_5"><button onclick="showAnswer(5)" class="show_but">Show Answer</button></div>
+    <hr>
+6. What tool do you use to create and edit Javascript programs?
+    a. A browser
+    <span id="answer_6">b. A text editor</span>
+    c. A pencil and a piece of paper
+    d. MS Word
+    <div class="show_answer" id="question_6"><button onclick="showAnswer(6)" class="show_but">Show Answer</button></div>
+    <hr>
+7. What are variables used for in Javascript programs?
+    <span id="answer_7">a. Storing numbers, dates, or other values</span>
+    b. Varying randomly
+    c. Storing color data
+    d. Storing text
+    <div class="show_answer" id="question_7"><button onclick="showAnswer(7)" class="show_but">Show Answer</button></div>
+    <hr>
+8. Using a debugger, how do you stop code execution on a specific line?
+    <span id="answer_8">a. Set a breakpoint</span>
+    b. Use the tag &lt;stopdebug&gt;
+    c. Type &lt;stop&gt;
+    d. You cannot do this with a debugger
+    <div class="show_answer" id="question_8"><button onclick="showAnswer(8)" class="show_but">Show Answer</button></div>
+    <hr>
+9. True or False: you can position a fixed layout anywhere on the page
+    <span id="answer_9">a. True</span>
+    b. False
+    <div class="show_answer" id="question_9"><button onclick="showAnswer(9)" class="show_but">Show Answer</button></div>
+    <hr>
+10. The plus sign in the following code means what?
+    document.write('This is a text string ' + 'that I have created.')
+    a. separate the lines
+    <span id="answer_10">b. join the two strings together</span>
+    c. creates a new line
+    d. adds spaces
+    <div class="show_answer" id="question_10"><button onclick="showAnswer(10)" class="show_but">Show Answer</button></div>
+    <hr>
+11. A special type of storage unit in Javascript that holds lists of items is called a(n)?
+    a. list container
+    b. object
+    <span id="answer_11">c. array</span>
+    d. table of data
+    <div class="show_answer" id="question_11"><button onclick="showAnswer(11)" class="show_but">Show Answer</button></div>
+    <hr>
+12. Group of statements that repeat a certain number of times is called a(n)
+    a. object
+    <span id="answer_12">b. loop</span>
+    c. array
+    d. table
+    <div class="show_answer" id="question_12"><button onclick="showAnswer(12)" class="show_but">Show Answer</button></div>
+    <hr>
+13. A script that executes when the user clicks the mouse button is an example of what?
+    a. a table
+    b. an array
+    c. an object
+    <span id="answer_13">d. an event handler</span>
+    <div class="show_answer" id="question_13"><button onclick="showAnswer(13)" class="show_but">Show Answer</button></div>
+    <hr>
+14. Which of the following tags can be used to create a layer?
+    a. &lt;more&gt;
+    b. &lt;style&gt;
+    c. &lt;layer&gt;
+    <span id="answer_14">d. &lt;div&gt;</span>
+    <div class="show_answer" id="question_14"><button onclick="showAnswer(14)" class="show_but">Show Answer</button></div>
+    <hr>
+15. Which of the following is NOT a valid Javascript variable name?
+    a. firsandlast
+    b. first_and_last_names
+    <span id="answer_15">c. 2names</span>
+    d. All of the above
+    <div class="show_answer" id="question_15"><button onclick="showAnswer(15)" class="show_but">Show Answer</button></div>
+    <hr>
+</pre>
+
+    
+</body>
+</html>

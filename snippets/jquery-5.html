@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Example 5</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style>
+        html {
+	min-height: 100%;
+	font-family: 'Nunito', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+nav {
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: transparent;
+	color: white;
+	padding: 0 1rem;
+	font-size: 1.6rem;
+	height: 80px;
+	line-height: 80px;
+	transition: .5s all ease;
+}
+
+nav.active {
+	background: white;
+	color: #111;
+}
+
+header {
+	height: 60vh;
+		background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+}
+
+#begin {
+	height: 120vh;
+	padding: 60px 0;
+	text-align: center;
+	color: #fff;
+	background: #111;
+}
+    </style>
+</head>
+<body>
+        <nav>Navigation</nav>
+
+<header></header>
+
+<main id="begin">
+	Begin active state
+</main>
+
+       
+
+
+        <script>
+$(window).on("scroll", function() {
+	var position = $("#begin").offset();
+
+	if ($(window).scrollTop() > position.top - 80) {
+		$("nav").addClass("active");
+	} else {
+		$("nav").removeClass("active");
+	};
+});
+        </script>
+</body>
+</html>

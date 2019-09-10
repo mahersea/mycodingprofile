@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Intro to Javascript</title>
+    <style>
+        #main-container{
+            background-color: cornflowerblue;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main-container">
+This is the main container
+    </div>
+<hr>
+    <button onclick="somefunk()">Change Color</button>
+
+    <script>
+        function somefunk(){
+            document.getElementById('main-container').style.backgroundColor = "cornflowerblue";
+        }
+
+        function somemorefunk(){
+            document.getElementById('main-container').style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>

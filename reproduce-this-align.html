@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Aligning Text</title>
+    </head>
+    <style>
+        .somebox1{
+            border-width:1px;
+            border-style: solid;
+            border-color: blue;
+            padding:20px;
+            text-align: left;
+        }
+        .somebox2{
+            border:3px;
+            border-style: dashed;
+            border-color: red;
+            padding:20px;
+            text-align: center;
+        }
+        .somebox3{
+            border:5px;
+            border-style: double;
+            border-color: green;
+            padding:20px;
+            text-align: right;
+        }
+        .main-title{
+            color:rgb(63, 62, 62);
+        }
+        .sub-title{
+            text-decoration: underline ;
+            text-decoration-style: wavy;
+            color: rgb(0, 0, 0);
+        }
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+    <body>
+
+            <h1 class="main-title">Aligning Text</h1>
+
+            <p class="sub-title">Use Internal CSS, not Inline</p>
+
+    <div class="somebox1">
+            <h1></h1>
+            <p>This is container 1.<br>
+                border-width: 1px<br>
+                border-style: solid<br>
+                border-color: blue<br>
+                padding: 20px<br>
+            </p>  
+    </div>
+    <br>
+
+    <div class="somebox2">
+            <p>This is container 2. It has a 3px dashed-line red border, a 20px padding with alignment "text-align:center"</p>
+    </div>
+    <br>
+    <div class="somebox3">
+        <p>This is container 3. It has a 5px double green border, a 20px padding with alignment "text-align:right"</p>
+    </div>
+    </body>
+</html>

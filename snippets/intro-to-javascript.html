@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Intro to Javascript</title>
+    <style>
+        #main-container {
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function somefunk(newcolor){
+            document.getElementById("main-container").style.backgroundColor = newcolor;
+            document.getElementById("main-container").innerHTML = "The main container is " + newcolor;
+            document.getElementById("colorVal").value = newcolor;
+        }
+    </script>
+</head>
+<body onload="somefunk('purple')">
+
+ <hr>
+        <button onclick="somefunk('red')">Red</button>
+        <button onclick="somefunk('cornflowerblue')">Blue</button>
+        <button onclick="somefunk('orange')">Orange</button>
+        <button onclick="somefunk('#000000')">Black</button>
+        <button onclick="somefunk('pink')">Pink</button>
+<hr>
+    <div id="main-container">
+        This is the main container. It is green.
+    </div>
+<hr>
+
+<input type="text" value="" id="colorVal">
+
+
+<br><br><br>
+<hr>
+<script>
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1;
+        var yyyy = today.getFullYear();
+        document.write("Today's Date:" + dd + "/" + mm + "/" + yyyy)
+</script>
+</body>
+</html>

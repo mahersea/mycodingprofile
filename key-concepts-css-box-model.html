@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>Front-End Web Developer Course - Overview</title>
+          
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    </head>
+    <body>
+          <header>
+        <div style="width:80%;"><h2 class="main-title">Front-End Web Developer Resources</h2></div>
+          
+            <div>
+                <b><u>Instructor</u></b>: 
+                <br />
+                Sean Maher
+                <br />
+                mahersea@gmail.com
+            </div>
+        </header>
+        <div class="subpage-container"> 
+
+            <!-- Lab Exercises -->
+
+            <div class="concept-title">
+                    <h3>Key Concepts</h3>
+            </div>
+            <div class="col4">
+                <!-- Examples (Reproduce This!)    -->
+                <div class="subtitle"><strong>CSS Box Model</strong></div>
+                <div class="items" style="margin-bottom: 0px;">
+                    <p>When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.</p>
+                    <p>
+                        Every box is composed of four parts (or areas), defined by their respective edges: the content edge, padding edge, border edge, and margin edge.
+                    </p>
+                    
+                    <div style="display: flex; flex-direction: row;">
+                        <div style="padding:20px">
+                            <a href="images/css-box-model.jpg"><img src="images/css-box-model.jpg"></a>
+                            <p>
+                                <a href="https://www.tutorialrepublic.com/css-tutorial/css-box-model.php">Image from TutorialRepublic</a>
+                            </p>
+                        </div>
+                        <div style="padding:20px">
+                            <a href="images/css-box-model.png"><img src="images/css-box-model.png" width="400"></a>
+                            <p>
+                                <a href="https://hackernoon.com/the-box-model-44fc2c04a935">Image from Hackernoon</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                            <div style="padding:20px;width:50%;">
+                                <a href="images/boxmodel.gif"><img src="images/boxmodel.gif" width="400"></a>
+                                <p>
+                                    Box Model Heirarchy
+                                </p>
+                            </div>
+                            <div style="padding:20px;width:50%;">
+                                    <a href="images/css-box-model-with-dimensions.jpg"><img src="images/css-box-model-with-dimensions.jpg" width="375"></a>
+                                <p>
+                                    <a href="https://uxengineer.com/padding-vs-margin/">Image from UX Engineer</a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p>Using the CSS box model you can layout your page by 
+                            placing boxes within boxes in any number of ways:</p>  
+                        <div style="display: flex; flex-direction: row;">
+                                <div style="padding:20px;width:100%;">
+                                        <a href="images/box-layout.png"><img src="images/box-layout.png" width="800"></a>
+                                    <p>
+                                        <a href="https://devdocs.magento.com/guides/v2.2/frontend-dev-guide/layouts/layout-overview.html">Image from Magento - Ecommerce Platform</a>
+                                    </p>
+                                </div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: row;">
+                                <div style="padding:20px;width:100%;">
+                                        <a href="images/box-layout-fireframe.png"><img src="images/box-layout-fireframe.png" width="800"></a>
+                                    <p>
+                                        <a href="https://balsamiq.com/learn/resources/articles/responsivedesign/">Image from balsamiq.com - Wireframing for Responsive Design</a>
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- This script uses the HTML Canvas element and javascript to draw graphic
+             In this case, drawing gradient circles -->
+        <script>
+            // Blue dot
+                var c = document.getElementById("bluedot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"blue");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+    
+            // Red dot
+                var c = document.getElementById("reddot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"red");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+    
+            // Green dot
+            var c = document.getElementById("greendot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"green");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+    
+            // Yellow dot
+            var c = document.getElementById("yellowdot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"yellow");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+        
+            // Orange dot
+            var c = document.getElementById("orangedot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"orange");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+
+            // Purple dot
+            var c = document.getElementById("purpledot");
+                var ctx = c.getContext("2d");
+                // Create gradient
+                var grd = ctx.createLinearGradient(20,10,5,0);
+                grd.addColorStop(0,"purple");
+                grd.addColorStop(1,"white");
+                ctx.beginPath();
+                ctx.arc(10,10,5,0,2*Math.PI);
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fill();
+            </script>
+    </body>
+</html>

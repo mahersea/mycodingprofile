@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+    .output {
+        background-color:white;
+        width: 200px;
+        height: 100px;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    var realConsoleLog = console.log;
+    console.log = function () {
+        var message = [].join.call(arguments, " ");
+        // Display the message somewhere... (jQuery example)
+        $(".output").text(message);
+        realConsoleLog.apply(console, arguments);
+    };
+    </script>
+</head>
+<body>
+    <h3>Built-in Console</h3>
+    <div class="output"></div>
+    <script>
+        function test(){
+          console.log("hello", "my", "name", "is", "sean");  
+        }
+    </script>
+    <hr>
+    <button onclick="test()">Run</button>
+</body>
+</html>

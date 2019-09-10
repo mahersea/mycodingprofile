@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Aligning Nested Containers</title>
+    </head>
+    <style>
+        .somebox1{
+            border-width:1px;
+            border-style: solid;
+            border-color: blue;
+            padding:20px;
+            width:95%;
+            height:450px;
+        }
+        .somebox2{
+            border:3px;
+            border-style: dashed;
+            border-color: red;
+            padding:20px;
+            margin:auto;
+            width:50%;
+        }
+        .somebox3{
+            border:5px;
+            border-style: double;
+            border-color: green;
+            padding:20px;
+            float:left;
+            width:20%;
+        }
+        .somebox4{
+            border:5px;
+            border-style:ridge;
+            border-color: yellow;
+            padding:20px;
+            width:20%;
+            float: right;
+        }
+        .main-title{
+            color:rgb(63, 62, 62);
+        }
+        .sub-title{
+            text-decoration: underline ;
+            text-decoration-style:solid;
+            color: rgb(95, 14, 105);
+        }
+    </style>
+    <body>
+
+            <h3 class="main-title">Aligning Nested Containers with the "Float" property</h3>
+
+            <p class="sub-title">Use Internal CSS, not Inline</p>
+
+    <div class="somebox1">
+            <h1></h1>
+            <p>This is container 1. <br>
+               width:95% <br>
+               height:450px
+            </p>  
+            <br>
+        <div class="somebox2">
+                <p>This is container 2<br>
+                    width: 50%<br>
+                 <strong>"margin: auto"</strong></p>
+        </div>
+
+        <br>
+
+        <div class="somebox3">
+                <p>This is container 3
+                    <br>
+                    width: 20%<br> 
+                    <strong>float: left</strong></p></p>
+        </div>
+        <div class="somebox4">
+                <p>This is container 4. 
+                    <br>
+                    border: 5px yellow ridge <br>
+                    width: 20%<br>
+                    <strong>float: right</strong></p>
+        </div>
+
+    </div>
+    <br>
+
+    <br>
+    </body>
+</html>
