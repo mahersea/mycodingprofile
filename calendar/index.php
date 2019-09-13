@@ -37,6 +37,7 @@
         print "<tr>\n<td>\n"; 
         foreach ($conn->query($sql) as $row) {
 
+            
             // No Class Dates
             while($class_date == "2019-07-04" || $class_date == "2019-07-15" || $class_date == "2019-07-16" || $class_date == "2019-07-17" || $class_date == "2019-07-18" || $class_date == "2019-07-19" || $class_date == "2019-07-20" || $class_date == "2019-09-02" || $class_date == "2019-09-05"){                                
                 print "<div class='day_header' id='" . $i . "'>\n";
